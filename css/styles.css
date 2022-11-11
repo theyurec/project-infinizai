@@ -174,7 +174,7 @@ html, body {
 
   @media(max-width: 1000px) {
     .header__top-inner {
-      display: none;
+      
     }
     .burger {
       display: flex;
