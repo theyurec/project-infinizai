@@ -3,7 +3,7 @@ $(function () {
         e.preventDefault()
         $('.header__top').toggleClass('header__top--open')
         $('.burger').toggleClass('burger--close')
-    
+        $('.overlay').toggleClass('overlay--show')
     })
     setInterval(() => {
         if($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
