@@ -170,9 +170,10 @@ html, body {
   .header__body-blue {
     max-width: 634px;
     max-height: 1069px;
-    position: absolute;
-    top: 0;
-    right: 0; }
+    position: relative;
+    bottom: 71px;
+    left: 725px;
+    display: inline-block; }
   .header__player {
     position: relative;
     bottom: 760px;
