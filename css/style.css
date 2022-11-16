@@ -388,7 +388,7 @@ html {
   .sponsors__line {
     display: none; } }
 .advantages {
-  background: url("/images/needs-background.jpg"); }
+  background: url("../images/needs-background.jpg"); }
   .advantages__inner {
     padding: 136px 0 130px;
     display: -webkit-box;
