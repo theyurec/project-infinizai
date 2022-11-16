@@ -12,4 +12,29 @@ $(function () {
             $('.burger').removeClass('burger--follow')
         }
     },0)
+    $('.sponsors__icons').slick({
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 5000,
+        cssEase: 'linear',
+        draggable: false,
+        responsive:
+        [
+        {
+            breakpoint: 1000,
+            settings: {
+            slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 436,
+            settings: {
+            slidesToShow: 2,
+            } 
+        }
+        ]
+    });
 });
