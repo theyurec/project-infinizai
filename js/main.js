@@ -37,4 +37,33 @@ $(function () {
         }
         ]
     });
+    $('.customize__slider').slick({
+        slidesToShow: 3,
+        arrows: false,
+        responsive:
+        [
+        {
+            breakpoint: 570,
+            settings: {
+            slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 458,
+            settings: {
+            slidesToShow: 1,
+            } 
+        }
+        ]
+    })
+
+    $('.customize__slider-arrow-left').on('click', function(e){
+        e.preventDefault()
+        $('.customize__slider').slick('slickPrev')
+    })
+    $('.customize__slider-arrow-right').on('click', function(e){
+        e.preventDefault()
+        $('.customize__slider').slick('slickNext')
+    })
+    
 });
