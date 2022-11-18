@@ -756,10 +756,9 @@ html {
 
 
 .gamemode {
-
+  
   &__inner {
     display: flex;
-    margin: 0 -30px;
   }
 
   &__modes {
@@ -767,6 +766,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 480px;
   }
   &__title-icon {
     position: absolute;
