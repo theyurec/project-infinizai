@@ -750,3 +750,44 @@ html {
 
 }
 }
+
+
+// ====================================GAME MODE================================================
+
+
+.gamemode {
+
+  &__inner {
+    display: flex;
+    margin: 0 -30px;
+  }
+
+  &__modes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title-icon {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 330px;
+    height: 200px;
+    margin:auto;
+  }
+  &__icon {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+}
+
+
