@@ -1,7 +1,11 @@
-html, body {
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: Orbitron, sans-serif;
   font-size: 16px;
 }
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -31,6 +35,10 @@ html, body {
 .button:hover {
   transform: scale(1.1);
   transition: all .3s;
+}
+
+.slick-track img {
+  margin-right: 32px;
 }
 
 .header {
@@ -186,9 +194,10 @@ html, body {
   &__body-blue {
     max-width: 634px;
     max-height: 1069px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
+    bottom: 71px;
+    left: 746px;  
+    display: inline-block;
   }
 
   &__blue {
@@ -426,3 +435,318 @@ html, body {
   
 }
 
+// =============================ADVANTAGES==========================
+
+.advantages {
+  background: url("../images/needs-background.jpg");
+  &__inner {
+    padding: 136px 0 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 74px;
+    margin-bottom: 39px;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 716px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(223, 223, 223, 0.8);
+    margin-bottom: 61px;
+    text-align: center;
+    max-width: 698px;
+  }
+
+  &__items {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  &__item {
+    padding: 35px 35px 35px 80px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    max-width: 586px;
+    position: relative;
+    transition: all .3s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      transition: all .3s;
+    }
+  }
+
+  &__item-title {
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+  }
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(223, 223, 223, 0.8);
+  }
+  &__item-square {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  .advantages {
+    &__items {
+      gap: 10px;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 54px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    &__item-square {
+      display: none;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 42px;
+      margin-bottom: 0;
+    }
+  
+    &__item-text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+}
+}
+@media(max-width: 685px) {
+  .advantages {
+    &__inner {
+      padding: 50px 0;
+    }
+    &__items {
+      display: block;
+    }
+    &__item {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+}
+}
+
+
+// ======================CLOUD=====================================
+
+.cloud {
+  background: #000;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 0;
+  }
+
+  &__main {
+    margin-right: 50px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 74px;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+    max-width: 684px;
+    padding-top: 22px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(223, 223, 223, 0.8);
+    margin-bottom: 54px;
+    max-width: 721px;
+  }
+
+  &__button {
+    margin-bottom: 22px;
+  }
+
+  &__video {
+    position: relative;
+    cursor: pointer;
+    &:hover .cloud__video-icon {
+      transform: scale(1.1);
+      transition: all .3s;
+    }
+  }
+
+  &__video-img img {
+    max-width: 100%;
+  }
+
+  &__video-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .3s;
+  }
+}
+
+@media(max-width: 900px) {
+  .cloud {
+  &__inner {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  &__main {
+    text-align: center;
+    margin: 0 0 24px 0;
+  }
+  &__title {
+    font-size: 38px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+}
+}
+
+
+// ==========================CUSTOMIZE=============================
+
+.customize {
+  background: #2A313C;
+  &__inner {
+    display: block;
+    position: relative;
+    padding: 89px 0 48px;
+  }
+  &__image-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  &__main {
+    max-width: 590px;
+    margin-left: auto;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 74px;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+    max-width: 566px;
+    padding-top: 22px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(223, 223, 223, 0.8);
+    margin-bottom: 65px;
+    max-width: 562px;
+  }
+  &__slide {
+    width: 174px;
+    margin-right: 30px;
+  }
+  &__slider-arrows {
+    height: 30px;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 572px;
+    
+  }
+  &__slider-arrow-left,
+  &__slider-arrow-right {
+    transition: all .3s;
+  }
+  &__slider-arrow-left:hover,
+  &__slider-arrow-right:hover {
+    transform: scale(1.3);
+    transition: all .3s;
+  }
+
+}
+
+
+@media(max-width: 1220px) {
+  .customize {
+  &__inner {
+    
+  }
+  &__image-main {
+    display: none;
+  }
+  &__main {
+    margin: auto;
+  }
+  &__title {
+    font-size: 38px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+}
+}
+
+@media(max-width: 570px) {
+  .customize {
+    &__inner {
+      padding: 30px 30px;
+    }
+  &__slide {
+    margin-left: 30px;
+  }
+  &__slider-arrows {
+    display: none;
+  }
+
+}
+}
+@media(max-width: 480px) {
+  .customize {
+  &__slide {
+    margin-left: 10px;
+  }
+  &__slider-arrows {
+    display: none;
+  }
+
+}
+}

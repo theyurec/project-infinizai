@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/icon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <title>Infinizai</title>
 </head>
 <body>
@@ -20,15 +22,8 @@
                     <span></span>
                 </a>
                 <div class="header__top">
-                    <div class="header__body-blue">
-                        <img class="header__blue" src="./images/blue-block.jpg" alt="blue">
-                        <img class="header__player" src="./images/header/main.png" alt="player">
-                        <div class="header__block-made">
-                            <img src="./images/header/made.svg" alt="icon-made" class="header__block-made-icon">
-                            <img src="./images/header/made-word.svg" alt="made-word" class="header__block-word">
-                        </div>
-                    </div>
                     <div class="container">
+                    
                         <div class="header__top-inner">
                             <div class="header__logo">
                                 <img src="./images/logo.svg" alt="logo">
@@ -46,10 +41,19 @@
                                 </div>
                                 <button class="header__contact-btn"><a href="#">Contact Us</a></button>
                             </div>
+                        
+                        </div>
+                        <div class="header__body-blue">
+                            <img class="header__blue" src="./images/blue-block.jpg" alt="blue">
+                            <img class="header__player" src="./images/header/main.png" alt="player">
+                            <div class="header__block-made">
+                                <img src="./images/header/made.svg" alt="icon-made" class="header__block-made-icon">
+                                <img src="./images/header/made-word.svg" alt="made-word" class="header__block-word">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="header__body">
+                <div class="header__body">                   
                     <div class="container">
                             <div class="header__body-container">
                                 <div class="header__body-main">
@@ -75,12 +79,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                
-                            </div>
+                                </div>                               
+                            </div>                            
                     </div>
                 </div>
             </header>
+
             <section class="sponsors">
                 <div class="container">
                     <div class="sponsors__inner">
@@ -94,6 +98,125 @@
                             <img src="./images/sponsors/circle.svg" alt="circle" class="sponsors__icon">
                             <img src="./images/sponsors/muzica.svg" alt="muzica" class="sponsors__icon">
                             <img src="./images/sponsors/light.svg" alt="light" class="sponsors__icon">
+
+                            <img src="./images/sponsors/ideaa.svg" alt="ideaa" class="sponsors__icon">
+                            <img src="./images/sponsors/amara.svg" alt="amara" class="sponsors__icon">
+                            <img src="./images/sponsors/light.svg" alt="light" class="sponsors__icon">
+                            <img src="./images/sponsors/circle.svg" alt="circle" class="sponsors__icon">
+                            <img src="./images/sponsors/muzica.svg" alt="muzica" class="sponsors__icon">
+                            <img src="./images/sponsors/light.svg" alt="light" class="sponsors__icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages__inner">
+                        <div class="fire">
+                            <div class="fire__img">
+                                <img src="./images/fire-icon.svg" alt="fire">
+                            </div>
+                            <span class="fire__text">FUTURE OF ESPORTS</span>
+                        </div>
+                        <h2 class="advantages__title">Your one stop shop gaming needs!</h2>
+                        <p class="advantages__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        <div class="advantages__items">
+                            <div class="advantages__item">
+                                <img src="./images/square-icon.svg" alt="square" class="advantages__item-square">
+                                <h2 class="advantages__item-title">All New Gameplay</h2>
+                                <p class="advantages__item-text">Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit Vestibum ante ipsum primis in faucibus orci</p>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./images/square-icon.svg" alt="square" class="advantages__item-square">
+                                <h2 class="advantages__item-title">Generation Graphics</h2>
+                                <p class="advantages__item-text">Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit Vestibum ante ipsum primis in faucibus orci</p>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./images/square-icon.svg" alt="square" class="advantages__item-square">
+                                <h2 class="advantages__item-title">Lastest Game Engine</h2>
+                                <p class="advantages__item-text">Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit Vestibum ante ipsum primis in faucibus orci</p>
+                            </div>
+                            <div class="advantages__item">
+                                <img src="./images/square-icon.svg" alt="square" class="advantages__item-square">
+                                <h2 class="advantages__item-title">Multiplayer on the go</h2>
+                                <p class="advantages__item-text">Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit Vestibum ante ipsum primis in faucibus orci</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cloud">
+                <div class="container">
+                    <div class="cloud__inner">
+                        <div class="cloud__main">
+                            <div class="fire">
+                                <div class="fire__img">
+                                    <img src="./images/fire-icon.svg" alt="fire">
+                                </div>
+                                <span class="fire__text">FUTURE OF ESPORTS</span>
+                            </div>
+                            <h2 class="cloud__title">The new era of cloud gaming here</h2>
+                            <p class="cloud__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+                            <button class="cloud__button button"><a href="#">Explore More</a></button>
+                        </div>
+                        <div class="cloud__video">
+                            <a href="https://www.youtube.com/watch?v=4R9MhSW3h6Q" class="cloud__video-link" data-fancybox>
+                            <div class="cloud__video-img">
+                                <img src="./images/video-player.png" alt="gamer">
+                            </div>
+                            <img src="./images/play-video.svg" alt="play" class="cloud__video-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="customize">
+                <div class="container">
+                    <div class="customize__inner">
+                        <div class="customize__image-main">
+                            <img src="./images/character/character-main.png" alt="customize">
+                        </div>
+                        <div class="customize__main">
+                            <div class="fire">
+                                <div class="fire__img">
+                                    <img src="./images/fire-icon.svg" alt="fire">
+                                </div>
+                                <span class="fire__text">FUTURE OF ESPORTS</span>
+                            </div>
+                            <h2 class="customize__title">Customize your Own Character</h2>
+                            <p class="customize__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                            <div class="customize__slider">
+                                <div class="customize__slide"><img src="./images/character/character-1.png" alt="customize1" class="customize__image"></div>
+                                <div class="customize__slide"><img src="./images/character/character-2.png" alt="customize2" class="customize__image"></div>
+                                <div class="customize__slide"><img src="./images/character/character-3.png" alt="customize3" class="customize__image"></div>
+                                <div class="customize__slide"><img src="./images/character/character-1.png" alt="customize1" class="customize__image"></div>
+                                <div class="customize__slide"><img src="./images/character/character-2.png" alt="customize2" class="customize__image"></div>
+                                <div class="customize__slide"><img src="./images/character/character-3.png" alt="customize3" class="customize__image"></div>
+                            </div>
+                            <div class="customize__slider-arrows">
+                                <a href="" class="customize__slider-arrow-left"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="40px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#000;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="111" y2="64"/><line style="fill:none;stroke:#000;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="64" y2="17"/></g></svg></a>
+                                <a href="" class="customize__slider-arrow-right"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="40px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#000;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="17" y2="64"/><line style="fill:none;stroke:#000;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="64" y2="111"/></g></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gamemode">
+                <div class="container">
+                    <div class="gamemode__inner">
+                        <div class="gamemode__modes">
+                            <img src="./images/game-mode/smooth-icon.svg" alt="smooth">
+                            <h2 class="gamemode__title">Smooth FPS</h2>
+                        </div>
+                        <div class="gamemode__modes">
+                            <img src="./images/game-mode/multiplayer-icon.svg" alt="multiplayer">
+                            <h2 class="gamemode__title">Multiplayer</h2>
+                        </div>
+                        <div class="gamemode__modes">
+                            <img src="./images/game-mode/open-icon.svg" alt="open">
+                            <h2 class="gamemode__title">Open World</h2>
                         </div>
                     </div>
                 </div>
@@ -101,5 +224,7 @@
         </div>
     </div>
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
